@@ -22,7 +22,7 @@
           <h2 class="sr-only">Navegación principal</h2>
           <ol class="lista">
             <li><a href="index.html">Inicio</a></li>
-            <li><a href="curriculum.html">Curriculum</a></li>
+            <li>Curriculum</li>
             <li><a href="portafolio.html">Portafolio</a></li>
             <li><a href="contacto.html">Contacto</a></li>
           </ol>
@@ -30,38 +30,41 @@
       </div>
     </header>
   </div>
-  <!--Descripcion-->
-  <h1>Página de inicio</h1>
   <!--Descripción personal corta-->
   <section class="containe">
     <div class="About">
       <h2 class="Sobremi">Sobre mí</h2>
       <div class="Onepar">
-        <p>Soy Naideline Michelle Rivera Aguilar una estudiante de Diseño y desarrollo web de 18 años la cual le
-          apasiona
-          crear páginas web accesibles para cualquier persona.</p>
-        <p>Lo más importante para mí es adaptarme y comprender las necesidades del clientes para lograr plasmar todo eso
-          en su página web.</p>
+        <p>¡Hola! Soy Naideline Rivera Aguilar, diseñadora y desarrolladora web. Me gusta crear sitios
+          sencillos,
+          atractivos y que sean accesibles para todos.
+        </p>
+        <p>Para mí, lo más importante es
+          adaptarme y comprender las necesidades de mis clientes para reflejarlo fielmente en sus páginas web.
+        </p>
       </div>
     </div>
   </section>
   <!--Sección de Proyectos-->
-  <div class="Padding">
-    <main class="container">
-      <h2 class="Recproy">Proyectos más recientes</h2>
-      <div class="Proyectosinicio">
-        <article>
-          <img src="Imagenes/Dalioproyect3.jpg" alt="Imagen de la página web Dalio" class="Dalio1">
-          <h3 class="center">DALIO</h3>
-        </article>
-        <article>
-          <img src="Imagenes/Biccasproyect3.jpg" alt="Imagen de la página web Biccas" class="Dalio1">
-          <h3 class="center">BICCAS</h3>
-        </article>
-      </div>
-  </div>
-  <p><a href="portafolio.html" class="Vermas">Ver más proyectos</a></p>
+  <!--Sección de Proyectos-->
+<div class="Padding">
+  <main class="container">
+    <h2 class="Recproy">Proyectos destacados</h2>
+    <div class="Proyectosinicio">
+      <article class="project-container" onmouseover="animateProject(this)">
+        <img src="Imagenes/Archivos web anuario/Contraluz shopify.jpg" alt="Imagen de la página web Dalio" class="Dalio1">
+        <h3 class="center">CONTRALUZ</h3>
+      </article>
+      <article class="project-container" onmouseover="animateProject(this)">
+        <img src="Imagenes/Proyectos web/Captura web_18-11-2023_132741_naideline.github.io.jpeg" alt="Imagen de la página web Biccas" class="Dalio1">
+        <h3 class="center">EVENT SITE</h3>
+      </article>
+    </div>
   </main>
+</div>
+<p><a href="portafolio.html" class="Vermas">Ver más proyectos</a></p>
+
+
   <!--Pie de página-->
   <footer>
     <div class="Copy">
@@ -69,5 +72,5 @@
     </div>
   </footer>
 </body>
+<link rel="stylesheet" href="main.js">
 </html>
-
