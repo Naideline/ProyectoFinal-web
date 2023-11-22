@@ -16,17 +16,8 @@ img {
 }
 
 header {
-  background-color: rgb(75, 125, 129);;
+  background-color: rgb(75, 125, 129);
   color: #fff;
-}
-
-h1 {
-  font-size: 2.3rem;
-  text-align: center;
-  color: black;
-  font-size: 3rem;
-  margin: 1rem;
-  background-color: beige;
 }
 
 h2 {
@@ -117,11 +108,11 @@ footer {
 
 .About {
   text-align: center;
-  padding: 4rem 15rem 4rem 15rem;
+  padding: 4rem 20rem 4rem 20rem;
 }
 
 .containe {
-  background-color: #e4e4e4d8;
+  background-color: beige;
 }
 
 .Sobremi {
@@ -168,84 +159,6 @@ footer {
   padding: 5rem;
 }
 
-/*CURRICULUM*/
-
-/*Información y Educación*/
-.Educ2 ul {
-  background-color: #e4e4e4d8;
-  padding: 2rem;
-  border-radius: 1rem;
-  list-style: none;
-  border: 0.1rem solid #000000;
-}
-
-.seccion1 {
-  display: inline-flex;
-  justify-content: space-between;
-}
-
-.Edc1 {
-  margin: 1rem 10rem;
-}
-
-.Institucion {
-  font-size: 0.9rem;
-  font-weight: bold;
-}
-
-.Cursos {
-  font-weight: 1rem;
-  font-size: 1.5rem;
-}
-
-/*Experiencia laboral*/
-
-.Trabajo {
-  display: flex;
-}
-
-.Tarea {
-  margin: 1.5rem 0 0 0;
-  font-weight: 500;
-  max-width: 80rem;
-  flex-basis: 80%;
-}
-
-.Puesto {
-  padding: 1rem;
-  max-width: 90rem;
-}
-
-.color {
-  padding: 0 7rem 0 7rem;
-  gap: 60%;
-}
-
-/*Habilidades*/
-
-.Habilidad {
-  display: flex;
-}
-
-.box {
-  margin: 2rem 6rem;
-  list-style: none;
-}
-
-.Habilidad li {
-  background-color: #0004780e;
-  margin: 1rem;
-  color: #666666;
-  font-weight: 600;
-  border-radius: 0.3rem;
-}
-
-.Recpro {
-  text-align: center;
-  margin: 2rem 0 0 0;
-}
-
-/*PORTAFOLIO*/
 
 /*Mi trabajo*/
 
@@ -272,22 +185,53 @@ footer {
   display: flex;
 }
 
-.Proyectos1 div{
+.Proyectos1 div {
   margin: 0 5rem 5rem 5rem;
 }
 
 /*CONTACTO*/
 
 /*Info de contacto*/
+.Educ3 {
+  padding: 3rem;
+}
 
 .Educ3 li {
   list-style: none;
-  background-color: #fffdfdd8;
+  background-color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
   max-width: 15rem;
-  padding: 1rem;
-  border: 0.1rem solid #7b969c;
-  border-radius: 0.2rem;
+  margin: 0 auto 1rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border: 2px solid rgb(3, 3, 3);
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
+
+.Educ3 li:hover {
+  transform: scale(1.05);
+}
+
+.Educ3 li p {
+  margin: 0;
+  color: #555;
+}
+
+.Educ3 li a {
+  display: block;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.Educ3 li a:hover {
+  color: #2980b9;
+}
+
 
 .Sobremi2 {
   color: #666666;
@@ -312,7 +256,8 @@ footer {
 .project-container {
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s ease; /* Add smooth transition for scaling */
+  transition: transform 0.3s ease;
+  /* Add smooth transition for scaling */
 }
 
 /* Apply animation on hover */
@@ -331,16 +276,19 @@ footer {
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  background-color: rgb(75, 125, 129); /* New color: Red */
+  background-color: rgb(75, 125, 129);
+  /* New color: Red */
   color: #fff;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   display: block;
-  margin: 0 auto; /* Center the button */
+  margin: 0 auto;
+  /* Center the button */
 }
 
 .Vermas:hover {
-  background-color: rgb(79, 159, 165); /* Darker red on hover */
+  background-color: rgb(79, 159, 165);
+  /* Darker red on hover */
 }
 
 /* CSS for hover effect */
@@ -351,4 +299,151 @@ footer {
 .Miproy:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset de estilos y ajustes generales */
+body,
+h1,
+h2,
+h3,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para el contenedor principal */
+
+
+
+.Caja {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  animation: fadeInUp 1s ease;
+  /* Animación de entrada */
+}
+
+.Encabezad {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+}
+
+.lista li {
+  margin-right: 20px;
+  opacity: 0;
+  animation: fadeInRight 1s ease forwards;
+  /* Animación de entrada desde la derecha */
+}
+
+.lista li:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.lista li:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.lista li:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.lista li:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+.lista a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.lista a:hover {
+  color: #ffd700;
+}
+
+/* Animaciones personalizadas */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+/* Añade estilos adicionales según sea necesario */
+.header {
+  text-align: center;
+}
+
+.title {
+  color: #333;
+}
+
+.photo {
+  width: 150px;
+  border-radius: 50%;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-size: 2.3rem;
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  margin: 1rem;
+  background-color: beige;
+}
+
+h3 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.folio {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  padding: 10px;
+  background-color: #6b67678e;
+  border: 2px;
+  border-radius: 20px;
+  
 }
