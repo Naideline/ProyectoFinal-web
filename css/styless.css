@@ -112,7 +112,7 @@ footer {
 }
 
 .containe {
-  background-color: beige;
+  background-color: rgba(245, 245, 220, 0.466);
 }
 
 .Sobremi {
@@ -178,7 +178,7 @@ footer {
   padding: 1.2rem;
   margin: 2rem;
   border-radius: 1rem;
-  background-color: rgba(245, 245, 220, 0.425);
+  background-color: rgba(245, 245, 220, 0.301);
 }
 
 .parte1 {
@@ -218,20 +218,6 @@ footer {
   margin: 0;
   color: #555;
 }
-
-.Educ3 li a {
-  display: block;
-  color: #3498db;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 1rem;
-  transition: color 0.3s ease-in-out;
-}
-
-.Educ3 li a:hover {
-  color: #2980b9;
-}
-
 
 .Sobremi2 {
   color: #666666;
@@ -302,16 +288,7 @@ footer {
 }
 
 /* Reset de estilos y ajustes generales */
-body,
-h1,
-h2,
-h3,
-p,
-ol,
-ul {
-  margin: 0;
-  padding: 0;
-}
+
 
 body {
   font-family: 'Arial', sans-serif;
@@ -446,4 +423,100 @@ h3 {
   border: 2px;
   border-radius: 20px;
   
+}
+
+@media only screen and (max-width: 1024px) {
+  .Proyectos1 {
+    width: 90%;
+  }
+
+  .Miproy img {
+    max-height: 250px; 
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .Proyectos1 {
+    width: 95%;
+  }
+
+  .Miproy img {
+    max-height: 200px; 
+  }
+}
+
+.parte3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.myqr {
+  box-sizing: border-box;
+  max-width: 300px; 
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.myqr img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+}
+
+.Sobremi {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Onepar {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 0 20px; 
+}
+
+.Onepar p {
+  font-size: 16px; 
+  line-height: 1.5; 
+}
+
+@media only screen and (max-width: 768px) {
+  .Onepar {
+    max-width: 90%; 
+  }
+
+  .Onepar p {
+    font-size: 14px; 
+  }
+}
+
+/* Estilos para la sección Proyectos */
+.parte1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.Miproy {
+  box-sizing: border-box;
+  width: 48%; 
+  max-width: 400px; 
+  margin-bottom: 20px;
+}
+
+.Miproy img {
+  width: 100%;
+  height: auto;
+  max-height: 700px; 
+}
+
+.Miproy h3 {
+  font-size: 1.5rem; 
+  margin-bottom: 10px;
+}
+
+.Miproy p {
+  font-size: 14px; 
+  line-height: 1.5; 
 }
